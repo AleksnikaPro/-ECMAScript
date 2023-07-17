@@ -38,17 +38,10 @@ ul{
     justify-items: center;
     gap: 10px;
 }
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; */
-
 
 .item{
     background-color: bisque;
     border: 1px solid #7B6152;
-    /* box-shadow: #7B6152; */
     padding: 20px;
     min-width: 360px;
     position: relative;
@@ -61,15 +54,15 @@ ul{
     align-items: center;
 }
 
-/* .item__content-ul{
-
-} */
-
 .item__content-li{
     margin-bottom: 10px;
 }
 
 .item__content-secondul{
+    padding-left: 30px;
+}
+
+.item__content-thirdul{
     padding-left: 30px;
 }
 
