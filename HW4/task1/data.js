@@ -18,6 +18,7 @@ let usersInfo = [];
 for(let i=1; i<=localStorage.length; i++) {
     usersInfo.push(JSON.parse(localStorage.getItem([i])));
 }
+console.log(usersInfo);
 
 //создаем карточки пользователей
 const content = document.querySelector('.content');
@@ -25,8 +26,8 @@ const contentItems = document.querySelector('.content__items');
 
 for (let i = 0; i < usersInfo.length; i++) {
 
-    const userItem = document.createElement('div');
     //div item
+    const userItem = document.createElement('div');
     userItem.classList.add('item');
     contentItems.append(userItem);
 
@@ -125,7 +126,7 @@ function removeUserFromSection(usersInfo) {
         const target = event.target.closest('.item__cross-button');
         const userCard = event.target.closest('.item');
         if(target){
-            for (let i = 1; i < localStorage.length; i++) {
+            for (let i = 1; i <= localStorage.length; i++) {
                 if(localStorage.key(i) === target.id){
                     localStorage.removeItem(localStorage.key(i));
                 }
